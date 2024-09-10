@@ -12,8 +12,8 @@ import {FormControl, FormGroup, ReactiveFormsModule} from "@angular/forms";
 })
 export class RegisterDeveloperComponent {
   developerForm = new FormGroup({
-    firstName: new FormGroup(''),
-    lastName: new FormGroup(''),
+    firstName: new FormControl(''),
+    lastName: new FormControl(''),
   });
 
   @Output() developerRegistered = new EventEmitter<{firstName: string, lastName: string }>();

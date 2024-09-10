@@ -16,7 +16,7 @@ export class AppComponent {
   lastName: string =''
 
   //agregamos comportamiento
-  onDevloperRegistered(developer: { firstName: string, lastName: string }) {
+  onDeveloperRegistered(developer: { firstName: string, lastName: string }) {
     this.firstName = developer.firstName;
     this.lastName = developer.lastName;
   }
